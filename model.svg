@@ -53,20 +53,13 @@
     <textPath xlink:href="#valueBand" href="#valueBand" startOffset="50%" text-anchor="middle"><tspan font-weight="bold">VALUE</tspan>  ·  Policies · Knowledge sources · AI contributions · Role contributions · Outcomes</textPath>
   </text>
   <g text-anchor="middle" fill="#1F3352">
-    <text x="500" y="80" font-size="14" font-weight="bold">Discover</text>
-    <text x="500" y="96" font-size="10">Plan</text>
-    <text x="825" y="237" font-size="14" font-weight="bold">Shape</text>
-    <text x="825" y="253" font-size="10">Plan</text>
-    <text x="902" y="589" font-size="14" font-weight="bold">Prioritize</text>
-    <text x="902" y="605" font-size="10">Plan</text>
-    <text x="680" y="871" font-size="14" font-weight="bold">Commit</text>
-    <text x="680" y="887" font-size="10">Do</text>
-    <text x="320" y="871" font-size="14" font-weight="bold">Realize</text>
-    <text x="320" y="887" font-size="10">Do</text>
-    <text x="96" y="589" font-size="14" font-weight="bold">Measure</text>
-    <text x="96" y="605" font-size="10">Check</text>
-    <text x="175" y="237" font-size="14" font-weight="bold">Steer</text>
-    <text x="175" y="253" font-size="10">Act</text>
+    <text x="500" y="86" font-size="14" font-weight="bold">Discover</text>
+    <text x="825" y="243" font-size="14" font-weight="bold">Shape</text>
+    <text x="902" y="595" font-size="14" font-weight="bold">Prioritize</text>
+    <text x="680" y="877" font-size="14" font-weight="bold">Commit</text>
+    <text x="320" y="877" font-size="14" font-weight="bold">Realize</text>
+    <text x="96" y="595" font-size="14" font-weight="bold">Measure</text>
+    <text x="175" y="243" font-size="14" font-weight="bold">Steer</text>
   </g>
 
   <!-- Delivery components along the band -->
@@ -79,30 +72,20 @@
 
   <!-- Delivery behaviors -->
   <g text-anchor="middle" fill="#1F3352">
-    <text x="500" y="214" font-size="14" font-weight="bold">Explain</text>
-    <text x="500" y="230" font-size="10">Plan</text>
-    <text x="767" y="408" font-size="14" font-weight="bold">Evaluate</text>
-    <text x="767" y="424" font-size="10">Plan</text>
-    <text x="665" y="722" font-size="14" font-weight="bold">Deliver</text>
-    <text x="665" y="738" font-size="10">Do</text>
-    <text x="335" y="722" font-size="14" font-weight="bold">Validate</text>
-    <text x="335" y="738" font-size="10">Check</text>
-    <text x="233" y="408" font-size="14" font-weight="bold">Confirm</text>
-    <text x="233" y="424" font-size="10">Act</text>
+    <text x="500" y="220" font-size="14" font-weight="bold">Explain</text>
+    <text x="767" y="414" font-size="14" font-weight="bold">Evaluate</text>
+    <text x="665" y="728" font-size="14" font-weight="bold">Deliver</text>
+    <text x="335" y="728" font-size="14" font-weight="bold">Validate</text>
+    <text x="233" y="414" font-size="14" font-weight="bold">Confirm</text>
   </g>
 
   <!-- AI behaviors -->
   <g text-anchor="middle" fill="#ffffff">
-    <text x="500" y="352" font-size="13" font-weight="bold">Explore</text>
-    <text x="500" y="367" font-size="10">Plan</text>
-    <text x="638" y="452" font-size="13" font-weight="bold">Assess</text>
-    <text x="638" y="467" font-size="10">Plan</text>
-    <text x="585" y="614" font-size="13" font-weight="bold">Change</text>
-    <text x="585" y="629" font-size="10">Do</text>
-    <text x="415" y="614" font-size="13" font-weight="bold">Verify</text>
-    <text x="415" y="629" font-size="10">Check</text>
-    <text x="362" y="452" font-size="13" font-weight="bold">Reconcile</text>
-    <text x="362" y="467" font-size="10">Act</text>
+    <text x="500" y="358" font-size="13" font-weight="bold">Explore</text>
+    <text x="638" y="458" font-size="13" font-weight="bold">Assess</text>
+    <text x="585" y="620" font-size="13" font-weight="bold">Change</text>
+    <text x="415" y="620" font-size="13" font-weight="bold">Verify</text>
+    <text x="362" y="458" font-size="13" font-weight="bold">Reconcile</text>
   </g>
 
   <!-- AI core components -->

@@ -383,14 +383,3 @@ No role in this layer.
 ### 2.8.5 What matters by adoption maturity
 - **Low:** the product becomes known, findings prove true. Stops are frequent and expected; changes are smaller and slower.
 - **High:** changes that hold, little rework, knowledge that holds. Stops are rare; contradictions come from drift, not ignorance.
-
-## 2.9 PDCA
-
-The layer works as a PDCA loop, across its contracts and behaviors:
-
-- **Plan:** Explore and Assess.
-- **Do:** Change.
-- **Check:** Verify.
-- **Act:** shared. [Delivery](03-delivery-layer.md) decides what to do with the result. Reconcile finds where knowledge no longer holds, and the correction goes through Change, so the next Plan starts from the product as it really is.
-
-The full loop is not required for every request. Lifecycle stage and adoption maturity decide which steps apply.

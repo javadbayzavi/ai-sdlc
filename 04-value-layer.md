@@ -451,14 +451,3 @@ The [AI Enablement Lead](roles/09-ai-enablement-lead.md) keeps the layer fit for
 ### 4.8.5 What matters by adoption maturity
 - **Low:** customers become known, claims that are true. Evidence is thin; initiatives are smaller and revisited more often.
 - **High:** expectations that match reality, initiatives stopped on time, value realized.
-
-## 4.9 PDCA
-
-The layer works as a PDCA loop, across its behaviors:
-
-- **Plan:** Discover, Shape, and Prioritize.
-- **Do:** Commit and Realize. Delivery carries out the committed intent between them.
-- **Check:** Measure.
-- **Act:** Steer.
-
-The full loop is not required for every initiative. Lifecycle stage and adoption maturity decide which steps apply.

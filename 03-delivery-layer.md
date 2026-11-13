@@ -383,14 +383,3 @@ The [AI Enablement Lead](roles/09-ai-enablement-lead.md) keeps the layer fit for
 ### 3.8.5 What matters by adoption maturity
 - **Low:** features become known, explanations that hold. Stops are frequent and expected; releases are smaller.
 - **High:** releases that hold, little rework, evaluations that match reality.
-
-## 3.9 PDCA
-
-The layer works as a PDCA loop, across its contracts and behaviors:
-
-- **Plan:** Explain and Evaluate.
-- **Do:** Deliver.
-- **Check:** Validate.
-- **Act:** shared. [Value](04-value-layer.md) decides what to do with the result. Confirm keeps what is said about the product consistent with what it does, so the next intent starts from the product as it really is.
-
-The full loop is not required for every business request. Lifecycle stage and adoption maturity decide which steps apply.

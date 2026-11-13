@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1040" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1000" height="1040" fill="#ffffff"/>
+
+  <!-- Value: behaviors -->
+  <g stroke="#8FA8CC" stroke-width="1" fill="#E1E9F4">
+    <path d="M 296.1 76.5 A 470 470 0 0 1 703.9 76.5 L 657.1 173.8 A 362 362 0 0 0 342.9 173.8 Z"/>
+    <path d="M 703.9 76.5 A 470 470 0 0 1 958.2 395.4 L 852.9 419.5 A 362 362 0 0 0 657.1 173.8 Z"/>
+    <path d="M 958.2 395.4 A 470 470 0 0 1 867.4 793 L 783 725.7 A 362 362 0 0 0 852.9 419.5 Z"/>
+    <path d="M 867.4 793 A 470 470 0 0 1 500 970 L 500 862 A 362 362 0 0 0 783 725.7 Z"/>
+    <path d="M 500 970 A 470 470 0 0 1 132.6 793 L 217 725.7 A 362 362 0 0 0 500 862 Z"/>
+    <path d="M 132.6 793 A 470 470 0 0 1 41.8 395.4 L 147.1 419.5 A 362 362 0 0 0 217 725.7 Z"/>
+    <path d="M 41.8 395.4 A 470 470 0 0 1 296.1 76.5 L 342.9 173.8 A 362 362 0 0 0 147.1 419.5 Z"/>
+  </g>
+  <circle cx="500" cy="500" r="470" fill="none" stroke="#2F4A73" stroke-width="2"/>
+
+  <!-- Value: components band -->
+  <circle cx="500" cy="500" r="362" fill="#D0DCEE" stroke="#8FA8CC" stroke-width="1"/>
+
+  <!-- Delivery: behaviors -->
+  <g stroke="#8FA8CC" stroke-width="1" fill="#C3D3E8">
+    <path d="M 306 233 A 330 330 0 0 1 694 233 L 636.4 312.3 A 232 232 0 0 0 363.6 312.3 Z"/>
+    <path d="M 694 233 A 330 330 0 0 1 813.9 602 L 720.7 571.7 A 232 232 0 0 0 636.4 312.3 Z"/>
+    <path d="M 813.9 602 A 330 330 0 0 1 500 830 L 500 732 A 232 232 0 0 0 720.7 571.7 Z"/>
+    <path d="M 500 830 A 330 330 0 0 1 186.1 602 L 279.3 571.7 A 232 232 0 0 0 500 732 Z"/>
+    <path d="M 186.1 602 A 330 330 0 0 1 306 233 L 363.6 312.3 A 232 232 0 0 0 279.3 571.7 Z"/>
+  </g>
+  <circle cx="500" cy="500" r="330" fill="none" stroke="#2F4A73" stroke-width="2"/>
+
+  <!-- Delivery: components band -->
+  <circle cx="500" cy="500" r="232" fill="#AFC3E0" stroke="#8FA8CC" stroke-width="1"/>
+
+  <!-- AI: behaviors -->
+  <g stroke="#8FA8CC" stroke-width="1" fill="#2F4A73">
+    <path d="M 382.4 338.2 A 200 200 0 0 1 617.6 338.2 L 552.9 427.2 A 90 90 0 0 0 447.1 427.2 Z"/>
+    <path d="M 617.6 338.2 A 200 200 0 0 1 690.2 561.8 L 585.6 527.8 A 90 90 0 0 0 552.9 427.2 Z"/>
+    <path d="M 690.2 561.8 A 200 200 0 0 1 500 700 L 500 590 A 90 90 0 0 0 585.6 527.8 Z"/>
+    <path d="M 500 700 A 200 200 0 0 1 309.8 561.8 L 414.4 527.8 A 90 90 0 0 0 500 590 Z"/>
+    <path d="M 309.8 561.8 A 200 200 0 0 1 382.4 338.2 L 447.1 427.2 A 90 90 0 0 0 414.4 527.8 Z"/>
+  </g>
+
+  <!-- AI: core components -->
+  <circle cx="500" cy="500" r="90" fill="#36588A" stroke="#8FA8CC" stroke-width="1"/>
+
+  <!-- Product knowledge: cross-cutting slice through all layers -->
+  <path d="M 530.8 584.6 L 660.7 941.7 A 470 470 0 0 1 339.3 941.7 L 469.2 584.6 A 90 90 0 0 0 530.8 584.6 Z"
+        fill="#F2B544" fill-opacity="0.6" stroke="#B7832A" stroke-width="1.5"/>
+
+  <!-- Value components along the band, and behaviors -->
+  <defs>
+    <path id="valueBand" d="M 154 500 A 346 346 0 0 1 846 500"/>
+  </defs>
+  <text font-size="11" fill="#1F3352">
+    <textPath xlink:href="#valueBand" href="#valueBand" startOffset="50%" text-anchor="middle"><tspan font-weight="bold">VALUE</tspan>  ·  Policies · Knowledge sources · AI contributions · Role contributions · Outcomes</textPath>
+  </text>
+  <g text-anchor="middle" fill="#1F3352">
+    <text x="500" y="80" font-size="14" font-weight="bold">Discover</text>
+    <text x="500" y="96" font-size="10">Plan</text>
+    <text x="825" y="237" font-size="14" font-weight="bold">Shape</text>
+    <text x="825" y="253" font-size="10">Plan</text>
+    <text x="902" y="589" font-size="14" font-weight="bold">Prioritize</text>
+    <text x="902" y="605" font-size="10">Plan</text>
+    <text x="680" y="871" font-size="14" font-weight="bold">Commit</text>
+    <text x="680" y="887" font-size="10">Do</text>
+    <text x="320" y="871" font-size="14" font-weight="bold">Realize</text>
+    <text x="320" y="887" font-size="10">Do</text>
+    <text x="96" y="589" font-size="14" font-weight="bold">Measure</text>
+    <text x="96" y="605" font-size="10">Check</text>
+    <text x="175" y="237" font-size="14" font-weight="bold">Steer</text>
+    <text x="175" y="253" font-size="10">Act</text>
+  </g>
+
+  <!-- Delivery components along the band -->
+  <defs>
+    <path id="deliveryBand" d="M 284 500 A 216 216 0 0 1 716 500"/>
+  </defs>
+  <text font-size="11" fill="#1F3352">
+    <textPath xlink:href="#deliveryBand" href="#deliveryBand" startOffset="50%" text-anchor="middle"><tspan font-weight="bold">DELIVERY</tspan>  ·  Policies · Knowledge sources · AI contributions · Role contributions · Outcomes</textPath>
+  </text>
+
+  <!-- Delivery behaviors -->
+  <g text-anchor="middle" fill="#1F3352">
+    <text x="500" y="214" font-size="14" font-weight="bold">Explain</text>
+    <text x="500" y="230" font-size="10">Plan</text>
+    <text x="767" y="408" font-size="14" font-weight="bold">Evaluate</text>
+    <text x="767" y="424" font-size="10">Plan</text>
+    <text x="665" y="722" font-size="14" font-weight="bold">Deliver</text>
+    <text x="665" y="738" font-size="10">Do</text>
+    <text x="335" y="722" font-size="14" font-weight="bold">Validate</text>
+    <text x="335" y="738" font-size="10">Check</text>
+    <text x="233" y="408" font-size="14" font-weight="bold">Confirm</text>
+    <text x="233" y="424" font-size="10">Act</text>
+  </g>
+
+  <!-- AI behaviors -->
+  <g text-anchor="middle" fill="#ffffff">
+    <text x="500" y="352" font-size="13" font-weight="bold">Explore</text>
+    <text x="500" y="367" font-size="10">Plan</text>
+    <text x="638" y="452" font-size="13" font-weight="bold">Assess</text>
+    <text x="638" y="467" font-size="10">Plan</text>
+    <text x="585" y="614" font-size="13" font-weight="bold">Change</text>
+    <text x="585" y="629" font-size="10">Do</text>
+    <text x="415" y="614" font-size="13" font-weight="bold">Verify</text>
+    <text x="415" y="629" font-size="10">Check</text>
+    <text x="362" y="452" font-size="13" font-weight="bold">Reconcile</text>
+    <text x="362" y="467" font-size="10">Act</text>
+  </g>
+
+  <!-- AI core components -->
+  <g text-anchor="middle" fill="#ffffff">
+    <text x="500" y="456" font-size="15" font-weight="bold">AI</text>
+    <text x="500" y="477" font-size="11">Policies</text>
+    <text x="500" y="494" font-size="11">Knowledge sources</text>
+    <text x="500" y="511" font-size="11">AI contributions</text>
+    <text x="500" y="528" font-size="11">Role contributions</text>
+    <text x="500" y="545" font-size="11">Outcomes</text>
+  </g>
+
+  <!-- Product knowledge levels -->
+  <text x="500" y="652" text-anchor="middle" font-size="10" fill="#ffffff">What it does</text>
+  <text x="500" y="784" text-anchor="middle" font-size="10" fill="#3A2A05">Why it works this way</text>
+  <text x="500" y="902" text-anchor="middle" font-size="10" fill="#3A2A05">Why it is worth building</text>
+  <text x="500" y="1015" text-anchor="middle" font-size="14" font-weight="bold" fill="#B7832A">PRODUCT KNOWLEDGE (cross-cutting)</text>
+</svg>

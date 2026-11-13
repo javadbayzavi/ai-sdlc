@@ -1,8 +1,6 @@
-# AI-SDLC
+# AI at the Core
 
-**A framework for AI-first product development**
-
-Handbook
+**From Value to Code: The AI-SDLC Handbook**
 
 **Version 1.0** · November 2026
 

@@ -22,6 +22,10 @@ Handbook
 8. [Agentic Engineer](roles/08-agentic-engineer.md)
 9. [AI Enablement Lead](roles/09-ai-enablement-lead.md)
 
+**Appendix**
+
+- A. [Alignment with Established Practices](appendix-a-alignment.md)
+
 ---
 
 © 2026 Javad Bayzavi. Licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE).

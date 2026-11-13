@@ -134,4 +134,4 @@ Each layer is described by the same elements:
 - **[AI layer](02-ai-layer.md#25-behavior):** the five behaviors as slices around a core naming the components of the layer.
 - Each Delivery behavior sits directly outside its AI counterpart: Explain and Explore, Evaluate and Assess, Deliver and Change, Validate and Verify, Confirm and Reconcile.
 - **[Product knowledge](#14-product-knowledge-a-cross-cutting-concern):** the cross-cutting slice through all layers, at a different level of abstraction in each: what the product does (AI), why it works this way (Delivery), and why it is worth building (Value).
-- **Alignment with PDCA:** every layer follows the Plan-Do-Check-Act cycle. Plan: Discover, Shape, and Prioritize in Value; Explain and Evaluate in Delivery; Explore and Assess in AI. Do: Commit and Realize; Deliver; Change. Check: Measure; Validate; Verify. Act: Steer; Confirm; Reconcile. Not every request runs the full cycle; lifecycle stage and adoption maturity decide which steps apply.
+- **[Alignment with PDCA](appendix-a-alignment.md#a2-pdca):** every layer follows the Plan-Do-Check-Act cycle through its behaviors.

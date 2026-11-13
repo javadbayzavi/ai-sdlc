@@ -93,4 +93,4 @@ The line lies at level 3, the first level at which the layer works the same way 
 
 ## 5.8 Relation to standards
 
-The levels follow the process capability levels of ISO/IEC 33020. The model is aligned with that scale; it does not claim conformance to it.
+The levels follow the process capability levels of ISO/IEC 33020, as set out in [Appendix A.3](appendix-a-alignment.md#a3-isoiec-33020).

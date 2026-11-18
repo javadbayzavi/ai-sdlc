@@ -37,28 +37,28 @@ Value uses the [contracts of the Delivery layer](03-delivery-layer.md#32-contrac
 
 ## 4.4 Policies
 
-The framework policies defined in [the Layers chapter (1.7)](01-layers.md#17-framework-policies) apply. This layer adds:
+The [principles (1.7)](01-layers.md#17-principles) and [framework policies (1.8)](01-layers.md#18-framework-policies) apply. This layer adds:
 
 ### 4.4.1 Alignment
-- Every initiative traces to the company strategy. Pursuing one that does not is an explicit decision, recorded with its reasoning.
-- Product reality reaches this layer only through Delivery's contracts.
+- Every initiative traces to the company strategy. Pursuing one that does not is an explicit decision, recorded with its reasoning. ([1.7.1](01-layers.md#171-accountability))
+- Product reality reaches this layer only through Delivery's contracts. ([1.7.5](01-layers.md#175-given-context))
 
 ### 4.4.2 Commitments
-- Nothing is promised outward, to customers or peer plans, before what it would take is known and the claim is confirmed against the product.
-- An outward commitment that no longer holds is withdrawn or corrected, never left to expire silently.
+- Nothing is promised outward, to customers or peer plans, before what it would take is known and the claim is confirmed against the product. ([1.7.3](01-layers.md#173-honesty))
+- An outward commitment that no longer holds is withdrawn or corrected, never left to expire silently. ([1.7.3](01-layers.md#173-honesty))
 
 ### 4.4.3 Independence
-- The value of an initiative is not judged solely by whoever shaped it.
+- The value of an initiative is not judged solely by whoever shaped it. ([1.7.2](01-layers.md#172-independence))
 
 ### 4.4.4 Reporting
-- The layer reports to the company how the product contributes to the strategy, and tells peer plans what they can rely on.
+- The layer reports to the company how the product contributes to the strategy, and tells peer plans what they can rely on. ([1.7.1](01-layers.md#171-accountability))
 
 ### 4.4.5 Data and security
-- Customer evidence, tickets, and business data are cleaned of personal data before they enter any AI context.
+- Customer evidence, tickets, and business data are cleaned of personal data before they enter any AI context. ([1.8.4](01-layers.md#184-data-protection))
 
 ### 4.4.6 Autonomy
-- The AI never decides in this layer. Every draft requires confirmation by its owner.
-- Nothing goes out to customers or outside the team on the AI's own initiative: no launch material, claims, or commitments.
+- The AI never decides in this layer. A draft becomes knowledge or a decision only when its owner confirms it. ([1.7.1](01-layers.md#171-accountability))
+- Nothing goes out to customers or outside the team on the AI's own initiative: no launch material, claims, or commitments. ([1.7.1](01-layers.md#171-accountability))
 
 ## 4.5 Behavior
 
@@ -378,14 +378,6 @@ The framework policies defined in [the Layers chapter (1.7)](01-layers.md#17-fra
 ## 4.6 AI contributions
 
 **Posture:** the AI is an instrument. People decide and own; the AI gathers, drafts, analyzes, and challenges for them.
-
-**Principles:**
-- **Instrument, not actor.** Decisions are made by people; the AI supports them and never decides. A draft becomes knowledge only when a person confirms it.
-- **Shared, not personal.** The same skills and conventions apply whoever uses the AI. Personal prompts and habits are not a channel for work in this layer.
-- **Autonomy is set by policy.** How much the AI does without human review follows the autonomy policies of the [framework](01-layers.md#173-autonomy) and [this layer](#446-autonomy), not personal preference or tool defaults.
-- **Makers and judges are separate.** The AI that helps shape an initiative and the AI that helps measure it are different, with separate contexts, and both are independent of the actors in the AI layer.
-- **The model holds nothing.** Everything the AI needs and everything it produces exists outside the model. Models are interchangeable, subject to evaluation for each behavior.
-- **Every contribution leaves a trace:** the behavior served, the adaptation parameters, the skill version, the model used, and who confirmed the result.
 
 **Materialization:**
 

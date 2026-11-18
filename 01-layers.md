@@ -86,29 +86,56 @@ Maturity adapts only the elements of a layer it actually affects. It does not ap
 
 Layers do not run themselves; roles run them: the [Product Manager](roles/07-product-manager.md), the [Agentic Engineer](roles/08-agentic-engineer.md), and the [AI Enablement Lead](roles/09-ai-enablement-lead.md). When something fails, such as a failed validation, it is handled by the judgment of whoever runs the layer, not by a mechanism inside the layer.
 
-## 1.7 Framework policies
+## 1.7 Principles
 
-These policies apply to every layer. A layer may make a framework policy stricter or give it a concrete interpretation, but never make it looser.
+Principles are what the framework stands on. They apply to every layer, every behavior, and every adoption of the framework, and they are never tailored: work that does not follow them is not done under this framework. Everything else, including contracts, behaviors, policies, and their implementation, is adopted and adapted to the product.
 
-### 1.7.1 Authority
-- A layer acts only within its purpose and on requests that come through its contracts.
-- A layer never fills gaps with assumptions. When intent is unclear, conflicts with reality, or would cross a boundary, it stops and asks.
-- No one judges their own work. Verification is independent of whoever produced the work.
-- A layer acts only within the boundary it was given. What it notices outside that boundary, it reports.
+A principle is not checked directly. It shows in the policies and behaviors that realize it.
 
-### 1.7.2 Honesty
-- Uncertainty is always stated, never hidden. "Could not be determined" is a valid answer; a confident guess is not.
+### 1.7.1 Accountability
+**People are accountable; AI never is.** Every decision has one accountable person. The AI prepares, does, and challenges work, but never takes a decision that belongs to a person.
 
-### 1.7.3 Autonomy
-- The autonomy given to AI follows lifecycle stage and adoption maturity, never personal preference or tool defaults.
-- Autonomy is lowest where the stakes are highest and understanding is lowest: mature parts with low adoption maturity.
-- Work touching a sensitive area is never fully autonomous, at any stage or maturity.
-- Autonomy can be tightened for a single request, but never loosened beyond the layer's interpretation.
+### 1.7.2 Independence
+**No one judges their own work.** Verification is independent of whoever produced the work, whether a person or an AI.
 
-### 1.7.4 Data protection
-- No personal data, secrets, or credentials enter the context of any AI, in any layer.
+### 1.7.3 Honesty
+**Uncertainty is stated, never filled with assumptions.** "Could not be determined" is a valid answer; a confident guess is not.
 
-## 1.8 What defines each layer
+### 1.7.4 Knowledge outside the model
+**Knowledge lives outside the model.** Everything the AI needs and everything it produces exists outside the model, where its layer records it. Nothing depends on what a model or a session remembers, so models can be replaced.
+
+### 1.7.5 Given context
+**Context is given, never inferred.** The AI works on the context it receives: the request, its boundary, and the lifecycle stage and adoption maturity of what it concerns. What is not given is asked for, not assumed.
+
+### 1.7.6 Shared, not personal
+**AI contributions are shared, not personal.** A contribution is the same whoever asks for it. Personal prompts, habits, preferences, and tool defaults are not a channel for work.
+
+### 1.7.7 Adaptation
+**Adapt to lifecycle stage and adoption maturity.** How a layer works, and how much autonomy the AI is given, follow the stakes of the work and how ready the layer is to carry it. The principles themselves are never adapted.
+
+## 1.8 Framework policies
+
+Policies turn principles into what must or must not be done. Each policy realizes a principle of this framework, or an external principle the organization is bound by, such as information security or privacy. The principle a policy realizes is cited with it.
+
+Framework policies apply to every layer. A layer may make a framework policy stricter or give it a concrete interpretation, but never make it looser. Each layer adds its own policies in its chapter.
+
+### 1.8.1 Authority
+- A layer acts only within its purpose and on requests that come through its contracts. ([1.7.5](#175-given-context))
+- A layer never fills gaps with assumptions. When intent is unclear, conflicts with reality, or would cross a boundary, it stops and asks. ([1.7.3](#173-honesty))
+- A layer acts only within the boundary it was given. What it notices outside that boundary, it reports. ([1.7.5](#175-given-context))
+
+### 1.8.2 Autonomy
+- Autonomy is lowest where the stakes are highest and understanding is lowest: mature parts with low adoption maturity. ([1.7.7](#177-adaptation))
+- Work touching a sensitive area is never fully autonomous, at any stage or maturity. ([1.7.1](#171-accountability))
+- Autonomy can be tightened for a single request, but never loosened beyond the layer's interpretation. ([1.7.7](#177-adaptation))
+
+### 1.8.3 Trace
+- Every AI contribution leaves a trace with its output: what it served, the adaptation parameters, the skill version, the model used, and, where a person confirms the result, who confirmed it. ([1.7.1](#171-accountability), [1.7.4](#174-knowledge-outside-the-model))
+
+### 1.8.4 Data protection
+- No personal data, secrets, or credentials enter the context of any AI, in any layer. (External: information security and privacy, see [Appendix A.4](appendix-a-alignment.md#a4-principles-and-policies))
+
+## 1.9 What defines each layer
 
 Each layer is described by the same elements:
 
@@ -117,14 +144,14 @@ Each layer is described by the same elements:
 | Purpose | The layer's main duties: what would be lost without the layer, which no other layer can take over |
 | Contracts | How it communicates with its neighboring layers in all cases |
 | Knowledge sources | What product knowledge it owns, keeps alive, and learns from |
-| Policies | The rules the layer must follow, including what it must never do |
+| Policies | The rules the layer must follow, including what it must never do, each realizing a principle or an external principle |
 | Behavior | How the layer is expected to act, for each contract it serves or, where it owns no contracts, for each of its activities |
 | AI contributions | How AI is used in this layer, as actor or as instrument, and how that use is materialized |
 | Role contributions | What each role is responsible for in this layer |
 | Outcomes | What the layer has actually achieved over time against its purpose. Outputs of an individual request, including proof of change, are not part of this element. |
 | Adaptation | How lifecycle stage and adoption maturity change the layer. Stated within each element where it applies. |
 
-## 1.9 Model
+## 1.10 Model
 
 ![The layered model](model.svg)
 

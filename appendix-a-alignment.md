@@ -22,3 +22,19 @@ Every layer follows the Plan-Do-Check-Act cycle through its behaviors:
 ## A.3 ISO/IEC 33020
 
 The [adoption maturity levels](05-maturity.md#54-levels) follow the process capability levels of ISO/IEC 33020: 0 Incomplete, 1 Performed, 2 Managed, 3 Established, 4 Predictable, 5 Innovating. The framework is aligned with that scale; it does not claim conformance to it.
+
+## A.4 Principles and policies
+
+The [principles](01-layers.md#17-principles) of the framework restate established principles of governance and management for work in which AI takes part:
+
+| Principle | Established principle | Example source |
+|---|---|---|
+| [Accountability](01-layers.md#171-accountability) | One accountable party for every decision | ISO/IEC 38500 (Responsibility) |
+| [Independence](01-layers.md#172-independence) | Segregation of duties | ISO/IEC 27001 (Annex A 5.3) |
+| [Knowledge outside the model](01-layers.md#174-knowledge-outside-the-model) | Organizational knowledge is maintained and made available | ISO 9001 (7.1.6) |
+| [Shared, not personal](01-layers.md#176-shared-not-personal) | A standard process, used the same way by everyone | ISO/IEC 33020 (level 3, Established) |
+| [Adaptation](01-layers.md#177-adaptation) | Tailoring to the context of the work | PRINCE2 (Tailor to suit the project) |
+
+[Honesty](01-layers.md#173-honesty) and [Given context](01-layers.md#175-given-context) have no direct counterpart; they are specific to this framework.
+
+Some policies realize an external principle directly rather than a principle of the framework. [Data protection](01-layers.md#184-data-protection) realizes information security and privacy, as set out in ISO/IEC 27001, ISO/IEC 27701, and the security practices of COBIT.

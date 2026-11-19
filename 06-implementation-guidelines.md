@@ -133,4 +133,4 @@ The setup in this chapter is the setup of a layer at [level 3](05-maturity.md#54
 | Independence | A judging behavior never runs in the maker's session | Level 3: separate skills and sessions, in practice |
 | Evaluation of models and skills | Tried on representative requests before use; result recorded | Level 4: systematic evaluation, run before every change |
 
-[Policies](01-layers.md#17-framework-policies) apply at every level. Removing personal data, secrets, and credentials, human review of sensitive areas, and confirmation of drafts by their owners are never deferred to a higher level.
+[Principles](01-layers.md#17-principles) and [policies](01-layers.md#18-framework-policies) apply at every level. Removing personal data, secrets, and credentials, human review of sensitive areas, and confirmation of drafts by their owners are never deferred to a higher level.

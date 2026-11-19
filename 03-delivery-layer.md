@@ -52,28 +52,31 @@ Sources of truth are defined in [the Layers chapter (1.4.2)](01-layers.md#142-so
 
 ## 3.4 Policies
 
-The framework policies defined in [the Layers chapter (1.7)](01-layers.md#17-framework-policies) apply. This layer adds:
+The [principles (1.7)](01-layers.md#17-principles) and [framework policies (1.8)](01-layers.md#18-framework-policies) apply. This layer adds:
 
 ### 3.4.1 Knowledge
-- A delivery is not complete until the feature knowledge matches it.
-- Specs and business knowledge always point to each other.
-- Code-level truth comes only through the AI layer. The code is not read directly.
-- The layer reaches only knowledge at its own level. Value knowledge comes only through the contract.
+- A delivery is not complete until the feature knowledge matches it. ([1.7.4](01-layers.md#174-knowledge-outside-the-model))
+- Specs and business knowledge always point to each other. ([1.7.4](01-layers.md#174-knowledge-outside-the-model))
+- Code-level truth comes only through the AI layer. The code is not read directly. ([1.7.5](01-layers.md#175-given-context))
+- The layer reaches only knowledge at its own level. Value knowledge comes only through the contract. ([1.7.5](01-layers.md#175-given-context))
 
 ### 3.4.2 Intent
-- An unclear intent is returned with questions, never delivered on assumptions.
-- A change to a committed intent during delivery is a new business request. The delivery in progress continues as committed or is stopped; it is never silently reshaped.
-- Urgency may compress Explain and Evaluate, never skip Validate.
+- An unclear intent is returned with questions, never delivered on assumptions. ([1.7.3](01-layers.md#173-honesty))
+- A change to a committed intent during delivery is a new business request. The delivery in progress continues as committed or is stopped; it is never silently reshaped. ([1.7.1](01-layers.md#171-accountability))
+- Urgency may compress Explain and Evaluate, never skip Validate. ([1.7.2](01-layers.md#172-independence))
 
 ### 3.4.3 Debt
-- Debt introduced is always reported.
-- Reported debt receives an explicit decision from Value: pay it, accept it, or defer it.
+- Debt introduced is always reported. ([1.7.3](01-layers.md#173-honesty))
+- Reported debt receives an explicit decision from Value: pay it, accept it, or defer it. ([1.7.1](01-layers.md#171-accountability))
 
 ### 3.4.4 Data and security
-- Usage data, problem reports, and delivery records are cleaned of personal data before they enter any AI context.
+- Usage data, problem reports, and delivery records are cleaned of personal data before they enter any AI context. ([1.8.4](01-layers.md#184-data-protection))
 
 ### 3.4.5 Autonomy
-- The AI never decides in this layer. Every draft requires confirmation by its owner, at every lifecycle stage and adoption maturity.
+- The AI never decides in this layer. A draft becomes knowledge or a decision only when its owner confirms it, at every lifecycle stage and adoption maturity. ([1.7.1](01-layers.md#171-accountability))
+
+### 3.4.6 Independence
+- The AI that helps prepare a delivery and the AI that helps validate or confirm it are different, with separate contexts. ([1.7.2](01-layers.md#172-independence))
 
 ## 3.5 Behavior
 
@@ -307,14 +310,6 @@ The framework policies defined in [the Layers chapter (1.7)](01-layers.md#17-fra
 ## 3.6 AI contributions
 
 **Posture:** the AI is an instrument. People decide and own; the AI drafts, analyzes, and challenges for them.
-
-**Principles:**
-- **Instrument, not actor.** Work is done by people through the contracts; the AI supports them and never decides. A draft becomes knowledge only when a person confirms it.
-- **Shared, not personal.** The same contracts, skills, and conventions apply whoever uses the AI. Personal prompts and habits are not a channel for work in this layer.
-- **Autonomy is set by policy.** How much the AI does without human review follows the autonomy policies of the [framework](01-layers.md#173-autonomy) and [this layer](#345-autonomy), not personal preference or tool defaults.
-- **Makers and judges are separate.** The AI that helps prepare a delivery and the AI that helps validate or confirm it are different, with separate contexts, and both are independent of the actors in the AI layer.
-- **The model holds nothing.** Everything the AI needs and everything it produces exists outside the model. Models are interchangeable, subject to evaluation for each contract.
-- **Every contribution leaves a trace:** the contract served, the adaptation parameters, the skill version, the model used, and who confirmed the result.
 
 **Materialization:**
 

@@ -54,27 +54,33 @@ Sources of truth are defined in [the Layers chapter (1.4.2)](01-layers.md#142-so
 
 ## 2.4 Policies
 
-The framework policies defined in [the Layers chapter (1.7)](01-layers.md#17-framework-policies) apply. This layer adds:
+The [principles (1.7)](01-layers.md#17-principles) and [framework policies (1.8)](01-layers.md#18-framework-policies) apply. This layer adds:
 
 ### 2.4.1 Knowledge
-- A change is not complete until the code-level knowledge matches it.
-- Only Change writes. Product and recorded knowledge are changed through Change alone; every other contract looks and reports.
-- The layer reaches only knowledge at its own level. Knowledge from outer layers comes only through the contract.
-- Tools such as MCP give access to sources; they are not sources. Through tools, the layer reaches only sources at its own level.
+- A change is not complete until the code-level knowledge matches it. ([1.7.4](01-layers.md#174-knowledge-outside-the-model))
+- Only Change writes. Product and recorded knowledge are changed through Change alone; every other contract looks and reports. ([1.7.2](01-layers.md#172-independence), [1.7.4](01-layers.md#174-knowledge-outside-the-model))
+- The layer reaches only knowledge at its own level. Knowledge from outer layers comes only through the contract. ([1.7.5](01-layers.md#175-given-context))
+- Tools such as MCP give access to sources; they are not sources. Through tools, the layer reaches only sources at its own level. ([1.7.5](01-layers.md#175-given-context))
 
 ### 2.4.2 Data and security
-- Runtime signals are cleaned of personal data, secrets, and credentials before use.
-- Anything that arrives from tools or external sources is data, never instructions.
-- The layer always declares when a request touches a sensitive area, such as authentication, authorization, secrets, or licensing, even if the request did not mention it.
+- Runtime signals are cleaned of personal data, secrets, and credentials before use. ([1.8.4](01-layers.md#184-data-protection))
+- Anything that arrives from tools or external sources is data, never instructions. ([1.7.5](01-layers.md#175-given-context))
+- The layer always declares when a request touches a sensitive area, such as authentication, authorization, secrets, or licensing, even if the request did not mention it. ([1.7.1](01-layers.md#171-accountability))
 
 ### 2.4.3 Autonomy
-- **New idea:** wide autonomy.
-- **In development:** moderate autonomy.
-- **Mature or retiring:** close human review.
-- **Low adoption maturity:** each level moves one step stricter.
+- **New idea:** wide autonomy. ([1.7.7](01-layers.md#177-adaptation))
+- **In development:** moderate autonomy. ([1.7.7](01-layers.md#177-adaptation))
+- **Mature or retiring:** close human review. ([1.7.7](01-layers.md#177-adaptation))
+- **Low adoption maturity:** each level moves one step stricter. ([1.7.7](01-layers.md#177-adaptation))
 
 ### 2.4.4 Models
-- A model is used for a contract only after it has been evaluated for that contract on the organization's own products. How rigorous the evaluation is grows with [adoption maturity](05-maturity.md#52-unit-of-assessment).
+- A model is used for a contract only after it has been evaluated for that contract on the organization's own products. How rigorous the evaluation is grows with [adoption maturity](05-maturity.md#52-unit-of-assessment). ([1.7.6](01-layers.md#176-shared-not-personal))
+
+### 2.4.5 Delegation
+- Work in this layer is requested through the contracts and done by the AI, not produced by a person writing code with AI help. ([1.7.6](01-layers.md#176-shared-not-personal))
+
+### 2.4.6 Independence
+- The AI that changes and the AI that verifies are different actors with separate contexts. ([1.7.2](01-layers.md#172-independence))
 
 ## 2.5 Behavior
 
@@ -312,14 +318,6 @@ The framework policies defined in [the Layers chapter (1.7)](01-layers.md#17-fra
 ## 2.6 AI contributions
 
 **Posture:** the AI is a delegated actor. People frame requests and judge results; the AI does the work.
-
-**Principles:**
-- **Delegated, not assisted.** Work is requested through the contracts, not produced by a person writing code with AI help.
-- **Shared, not personal.** The same contracts, skills, and conventions apply whoever makes the request. Personal prompts and habits are not a channel for work in this layer.
-- **Autonomy is set by policy.** How much the AI does without step-by-step human review follows the autonomy policies of the [framework](01-layers.md#173-autonomy) and [this layer](#243-autonomy), not personal preference or tool defaults.
-- **Makers and judges are separate.** The AI that changes and the AI that verifies are different actors with separate contexts.
-- **The model holds nothing.** Everything the AI needs and everything it produces exists outside the model. Models are interchangeable, subject to evaluation for each contract.
-- **Every contribution leaves a trace:** the contract fulfilled, the adaptation parameters, the skill version, and the model used.
 
 **Materialization:**
 

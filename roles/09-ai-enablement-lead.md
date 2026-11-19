@@ -49,7 +49,7 @@ None. The AI Enablement Lead defines and maintains the behaviors; the Product Ma
 ### 9.5.2 Does not decide
 - What is worth building, or anything else that belongs to the Product Manager.
 - Whether a result is accepted, or anything else that belongs to the Agentic Engineer.
-- Anything that loosens a [framework policy](../01-layers.md#17-framework-policies). A layer may make a framework policy stricter, never looser.
+- Any change to a [principle](../01-layers.md#17-principles), or anything that loosens a [framework policy](../01-layers.md#18-framework-policies). A layer may make a framework policy stricter, never looser.
 
 ## 9.6 Independence
 

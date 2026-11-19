@@ -19,7 +19,7 @@ As defined in [2.7.2](../02-ai-layer.md#272-ai-enablement-lead), [3.7.3](../03-d
 - **Definition of the layer.** Contracts, behaviors, policies, and shared skills and conventions. Changes to them are deliberate and known to the people who rely on them.
 - **Independence.** What makes and what judges stay separate, in practice and not only on paper: Change and Verify in the AI layer, preparing a delivery and validating or confirming it in Delivery, shaping an initiative and measuring it in Value.
 - **Models.** Which model serves which contract or behavior is decided from evaluations on the organization's own products.
-- **Alignment with the products.** The layer's adaptation reflects the real lifecycle stages and adoption maturity of each product.
+- **Alignment with the products.** The layer's adaptation reflects the real lifecycle stage of each area and the real adoption maturity of each element.
 - **Outcomes and change.** The layer changes based on its outcomes, not on opinion. Where its use is disputed, the AI Enablement Lead's interpretation applies.
 
 ### 9.3.2 In the AI layer
@@ -30,8 +30,8 @@ As set out in the [Implementation Guidelines](../06-implementation-guidelines.md
 - **Skills and conventions.** One skill per behavior, versioned, encoding the behavior as its layer defines it.
 - **Tools and permissions.** Each behavior gets only what its outputs require.
 - **Trace.** Every contribution leaves its trace with its output.
-- **Evaluation.** Models and changes to skills are evaluated before use, as rigorously as the layer's [adoption maturity](../05-maturity.md#52-unit-of-assessment) requires.
-- **Moving up.** What each layer lacks for its next level of [adoption maturity](../05-maturity.md#57-moving-up) directs how the implementation is improved.
+- **Evaluation.** Models and changes to skills are evaluated before use, as rigorously as the [adoption maturity](../05-maturity.md#52-unit-of-assessment) of the behavior's implementation requires.
+- **Moving up.** What each element lacks for its next level of [adoption maturity](../05-maturity.md#57-moving-up) directs how the implementation is improved.
 
 ## 9.4 Behaviors run
 

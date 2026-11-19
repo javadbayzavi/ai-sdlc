@@ -25,7 +25,7 @@ As defined in [3.7.1](../03-delivery-layer.md#371-agentic-engineer):
 ### 8.3.2 In the AI layer
 As defined in [2.7.1](../02-ai-layer.md#271-agentic-engineer):
 - **Request quality.** Every request has a clear intent, a boundary, acceptance criteria where a change is involved, and the Delivery knowledge the AI needs to understand why.
-- **Lifecycle stage and adoption maturity.** The Agentic Engineer states both for every part a request involves, and makes the final decision when the layer argues against them.
+- **Lifecycle stage and adoption maturity.** The Agentic Engineer states the lifecycle stage of every area a request involves and the adoption maturity of what the work relies on, and makes the final decision when the layer argues against them.
 - **Stops.** When the layer stops with a question, the Agentic Engineer owns the answer.
 - **Feedback.** Where the layer falls short, the Agentic Engineer reports it to the AI Enablement Lead so the layer can improve.
 
@@ -56,6 +56,6 @@ Where a Delivery behavior needs code-level truth, the Agentic Engineer makes the
 - **Precise writing:** job descriptions, specs, acceptance criteria, and what must not change. This replaces most hands-on coding.
 - **Decomposition:** breaking work into pieces, each with its boundary and lifecycle stage, that can be verified.
 - **Judgment on evidence:** reading proof of change and verdicts critically, and sending back what is not proven.
-- **Knowing the product:** the lifecycle stage and adoption maturity of each part, and what must be preserved.
+- **Knowing the product:** the lifecycle stage of each area, the adoption maturity of what the work relies on, and what must be preserved.
 - **Release and production care:** reversible releases, watching health, restoring failures.
 - **Honest reporting:** debt, risk, and uncertainty stated openly.

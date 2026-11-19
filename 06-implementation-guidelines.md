@@ -28,7 +28,7 @@ These apply to every behavior in every layer.
 - Each behavior has one skill. It encodes the behavior as its layer defines it ([AI](02-ai-layer.md#25-behavior), [Delivery](03-delivery-layer.md#35-behavior), [Value](04-value-layer.md#45-behavior)): aim, expected behavior, adaptation, outputs, and constraints. It adds no rules of its own.
 - Conventions, the craft rules of a layer, are kept apart from skills and shared by all skills of that layer.
 - Skills and conventions are versioned and kept where the layer's materialization ([AI](02-ai-layer.md#26-ai-contributions), [Delivery](03-delivery-layer.md#36-ai-contributions), [Value](04-value-layer.md#46-ai-contributions)) places its inputs.
-- A change to a skill is a change to the layer. It is evaluated before use, as rigorously as the layer's [adoption maturity](05-maturity.md#52-unit-of-assessment) requires.
+- A change to a skill is a change to the layer. It is evaluated before use, as rigorously as the [adoption maturity](05-maturity.md#52-unit-of-assessment) of the behavior's implementation requires.
 
 ### 6.3.2 Tools and permissions
 - Each behavior gets only the tools its outputs require. Read access is the default; write access is given only where the layer allows that behavior to write.
@@ -43,7 +43,7 @@ These apply to every behavior in every layer.
 
 ### 6.3.4 Invocation
 - A behavior is started only through its skill, by the role that runs it.
-- Every request carries the contract input and the adaptation parameters: the lifecycle stage and adoption maturity of every part or feature involved. A request without them is stopped, not run.
+- Every request carries the contract input and the adaptation parameters: the lifecycle stage of every area involved and the adoption maturity of what the work relies on ([1.5](01-layers.md#15-two-kinds-of-maturity)). What is not known is stated as not known, and level 0 applies.
 - One request, one session. A session starts from the skill, the conventions, and the request, and ends with the output.
 
 ### 6.3.5 Output
@@ -120,17 +120,17 @@ Value skills never call Delivery or the AI layer. What Delivery returns through 
 
 ## 6.7 Implementation by adoption maturity
 
-The setup in this chapter is the setup of a layer at [level 3](05-maturity.md#544-level-3-established). A layer reaches it step by step. Each element is required from the level shown; below that level, the middle column applies.
+The setup in this chapter is the setup of a behavior at [level 3](05-maturity.md#544-level-3-established). Each behavior reaches it step by step. Each element is required from the level shown; below that level, the middle column applies.
 
 | Element | Before it is required | Required from |
 |---|---|---|
-| Skill | Instructions written down and reused, even if not yet shared | Level 2: one skill per behavior |
-| Skill shared by everyone | Skills may differ between people | Level 3 |
+| Skill | Instructions written down and open to everyone who does the work | Level 2: one skill per behavior |
+| Skill used the same way by everyone | Instructions applied unevenly from person to person | Level 3 |
 | Tools and permissions | Least privilege, as far as the tools allow | Level 2: as set per behavior in this chapter |
 | Knowledge | Whatever exists, treated as untrusted | Level 2: loaded from where the layer records it |
 | Invocation | The request carries the contract input and adaptation parameters | Level 2: started only through the skill, one request per session |
-| Output and trace | Outputs as the layer defines them | Level 2: fixed form, trace with the output |
+| Output and trace | Outputs as the layer defines them, with their trace | Level 2: fixed form |
 | Independence | A judging behavior never runs in the maker's session | Level 3: separate skills and sessions, in practice |
 | Evaluation of models and skills | Tried on representative requests before use; result recorded | Level 4: systematic evaluation, run before every change |
 
-[Principles](01-layers.md#17-principles) and [policies](01-layers.md#18-framework-policies) apply at every level. Removing personal data, secrets, and credentials, human review of sensitive areas, and confirmation of drafts by their owners are never deferred to a higher level.
+[Principles](01-layers.md#17-principles) and [policies](01-layers.md#18-framework-policies) apply at every level. Removing personal data, secrets, and credentials, human review of sensitive areas, confirmation of drafts by their owners, independence of judging from making, and the trace are never deferred to a higher level. What level 0 requires is set out in [5.4.1](05-maturity.md#541-level-0-incomplete).

@@ -6,7 +6,7 @@ The AI layer understands the product as it really is and changes it.
 
 ## 2.2 Contracts
 
-Every request carries the adaptation parameters and the relevant [Delivery knowledge](03-delivery-layer.md#33-knowledge-sources). The adaptation parameters are the adoption maturity and the lifecycle stage of every part the request involves, given by the Agentic Engineer. The layer may argue against them; the Agentic Engineer decides.
+Every request carries the adaptation parameters and the relevant [Delivery knowledge](03-delivery-layer.md#33-knowledge-sources). The adaptation parameters are the lifecycle stage of every area the request involves and the adoption maturity of what the work relies on ([1.5](01-layers.md#15-two-kinds-of-maturity)), given by the Agentic Engineer. An adoption maturity that is not known is stated as such, and level 0 applies. The layer may argue against them; the Agentic Engineer decides.
 
 Every request ends with either its result or a stop with a question.
 
@@ -24,7 +24,7 @@ Every request ends with either its result or a stop with a question.
 
 ### 2.2.4 Assess
 - **Receives:** a proposed change that has not been made.
-- **Returns:** the parts of the product it would touch, the risks, and what could not be determined. It does not make the change.
+- **Returns:** the areas of the product it would touch, the risks, and what could not be determined. It does not make the change.
 
 ### 2.2.5 Reconcile
 - **Receives:** a set of knowledge claims and their scope.
@@ -113,7 +113,7 @@ The [principles (1.7)](01-layers.md#17-principles) and [framework policies (1.8)
 | Mature | Behavior to preserve: dependents, test coverage, runtime behavior | Risks |
 | Retiring | What still depends on it, and what breaks when it is removed | Risks |
 
-**Highest demand:** a mature part with low adoption maturity. Widest scope, deepest attention to existing behavior, strongest flagging of uncertainty.
+**Highest demand:** a mature area with low adoption maturity. Widest scope, deepest attention to existing behavior, strongest flagging of uncertainty.
 
 **Outputs:**
 - Findings backed by the code.
@@ -160,7 +160,7 @@ The [principles (1.7)](01-layers.md#17-principles) and [framework policies (1.8)
 | Mature | Only what was intended changes; everything else is preserved | Acceptance criteria met, no regression in preserved behavior |
 | Retiring | Removal without breaking dependents, nothing left behind | Dependents handled, no leftover code, configuration, or data |
 
-**Highest demand:** a mature part with low adoption maturity. Existing behavior is pinned down before the change, increments are smallest, and every uncertainty leads to a stop.
+**Highest demand:** a mature area with low adoption maturity. Existing behavior is pinned down before the change, increments are smallest, and every uncertainty leads to a stop.
 
 **Outputs:**
 - The change and its tests.
@@ -207,7 +207,7 @@ The [principles (1.7)](01-layers.md#17-principles) and [framework policies (1.8)
 | Mature | No regression in preserved behavior | Risks |
 | Retiring | Dependents handled, nothing left behind | Risks |
 
-**Highest demand:** a mature part with low adoption maturity. Preserved behavior is hardest to see, so the checks are deepest, independence is strictest, and everything unverifiable is a risk.
+**Highest demand:** a mature area with low adoption maturity. Preserved behavior is hardest to see, so the checks are deepest, independence is strictest, and everything unverifiable is a risk.
 
 **Outputs:**
 - A verdict per acceptance criterion.
@@ -236,7 +236,7 @@ The [principles (1.7)](01-layers.md#17-principles) and [framework policies (1.8)
 - The proposed change is judged against the product as it really is, not as described.
 - Reach is traced through dependents, data, contracts, and runtime behavior, not only the code directly modified.
 - Risks are named concretely, with what they would affect.
-- The sensitive areas touched are identified, and each part touched is matched to the lifecycle stage given for it.
+- The sensitive areas touched are identified, and each area touched is matched to the lifecycle stage given for it.
 - What the assessment cannot see is stated as unknown.
 
 **Adaptation by adoption maturity:**
@@ -246,19 +246,19 @@ The [principles (1.7)](01-layers.md#17-principles) and [framework policies (1.8)
 | Low | The code and its history; hidden dependencies are likely | Underestimating reach |
 | High | Recorded structural knowledge, checked against the code | Trusting a drifted dependency picture |
 
-**Adaptation by lifecycle stage:** each part touched is assessed at its own stage.
+**Adaptation by lifecycle stage:** each area touched is assessed at its own stage.
 
-| Lifecycle stage of the part touched | Focus | Unknowns are treated as |
+| Lifecycle stage of the area touched | Focus | Unknowns are treated as |
 |---|---|---|
 | New idea | What the idea would affect outside itself | Open points |
 | In development | Effect on completeness, and debt introduced | Open points |
 | Mature | Regression risk to preserved behavior and its dependents | Risks |
 | Retiring | What still depends on it, and what breaks without it | Risks |
 
-**Highest demand:** a proposed change that reaches mature parts with low adoption maturity.
+**Highest demand:** a proposed change that reaches mature areas with low adoption maturity.
 
 **Outputs:**
-- The parts touched, each with its given lifecycle stage, or marked as not given.
+- The areas touched, each with its given lifecycle stage, or marked as not given.
 - Sensitive areas touched.
 - Risks.
 - Unknowns.
@@ -266,7 +266,7 @@ The [principles (1.7)](01-layers.md#17-principles) and [framework policies (1.8)
 **Constraints:**
 - Does not change the product.
 - Does not decide whether the change goes ahead. That belongs to [Delivery](03-delivery-layer.md).
-- Lifecycle stage and adoption maturity are given, never inferred. A part touched whose stage was not given is reported to the Agentic Engineer, not guessed.
+- Lifecycle stage and adoption maturity are given, never inferred. An area touched whose stage was not given is reported to the Agentic Engineer, not guessed.
 
 ### 2.5.5 Reconcile
 
@@ -301,7 +301,7 @@ The [principles (1.7)](01-layers.md#17-principles) and [framework policies (1.8)
 | Mature | Claims about preserved behavior | Risks: either a regression or stale knowledge |
 | Retiring | Knowledge that still refers to what is being removed | Leftovers to remove |
 
-**Highest demand:** mature parts with low adoption maturity, where inherited claims about critical behavior are least trustworthy.
+**Highest demand:** mature areas with low adoption maturity, where inherited claims about critical behavior are least trustworthy.
 
 **Outputs:**
 - A verdict per claim, with references into the code.
@@ -335,7 +335,7 @@ The [principles (1.7)](01-layers.md#17-principles) and [framework policies (1.8)
 The [Agentic Engineer](roles/08-agentic-engineer.md) is the only role that brings work into the AI layer. What the layer produces can only be as good as what the Agentic Engineer puts in.
 
 - **Request quality.** Every request has a clear intent, a boundary, acceptance criteria where a change is involved, and the Delivery knowledge the AI needs to understand why. A vague request that produces a wrong result is a failure of the request, not of the AI.
-- **Lifecycle stage and adoption maturity.** The Agentic Engineer states both for every part a request involves, and makes the final decision when the layer argues against them. The layer never infers them, so a wrong stage leads to the wrong level of care: a mature part treated as a new idea is changed carelessly.
+- **Lifecycle stage and adoption maturity.** The Agentic Engineer states the lifecycle stage of every area a request involves and the adoption maturity of what the work relies on, and makes the final decision when the layer argues against them. The layer never infers them, so a wrong stage leads to the wrong level of care: a mature area treated as a new idea is changed carelessly.
 - **Stops.** When the layer stops with a question, the Agentic Engineer owns the answer. Answering with a guess does not remove the assumption; it only moves it from the AI to the Agentic Engineer.
 - **Feedback.** Where the layer falls short, through wrong findings, missed risks, or unhelpful stops, the Agentic Engineer reports it to the AI Enablement Lead so the layer can improve.
 
@@ -347,7 +347,7 @@ The [AI Enablement Lead](roles/09-ai-enablement-lead.md) keeps the layer fit for
 - **Independence.** What makes a change and what verifies it stay separate, in practice and not only on paper.
 - **Models.** Which model serves which contract is decided from evaluations on the organization's own products. No model change without evaluation.
 - **Sensitive areas.** The list the layer uses to declare sensitive areas is maintained and current.
-- **Alignment with the products.** The layer's adaptation reflects the real lifecycle stages and adoption maturity of each product. As a product's adoption maturity grows, the layer's expectations change with it.
+- **Alignment with the products.** The layer's adaptation reflects the real lifecycle stage of each area and the real adoption maturity of each element. As adoption maturity grows, the layer's expectations change with it.
 - **Outcomes and change.** The layer changes based on its outcomes, not on opinion. Where its use is disputed, the AI Enablement Lead's interpretation applies.
 
 ### 2.7.3 Product Manager

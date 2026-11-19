@@ -72,13 +72,19 @@ The code is the truth for what the product is; the intent and its specs are the 
 
 The model uses two separate kinds of maturity. They answer different questions and must not be confused.
 
-**Lifecycle stage** is the maturity of the product, a domain, or a feature: new idea, in development, mature, or retiring. It answers: *what does this work demand?* A new idea calls for fast, cheap learning. A feature in development calls for building towards completeness. A mature feature calls for preserving what already works. A retiring feature calls for removing it without breaking what still depends on it.
+**Lifecycle stage** is the maturity of an area of the product: new idea, in development, mature, or retiring. It answers: *what does this work demand?* A new idea calls for fast, cheap learning. A feature in development calls for building towards completeness. A mature feature calls for preserving what already works. A retiring feature calls for removing it without breaking what still depends on it.
 
-**Adoption maturity** is how far this model has been adopted in a layer of a given product. It answers: *how ready is this layer to carry its part?* It covers four dimensions: the layer's knowledge, implementation, roles, and outcomes. Its levels and how they are assessed are defined in [the Maturity chapter (Chapter 5)](05-maturity.md).
+An **area** is a piece of the product that knowledge and a lifecycle stage are held for: the product as a whole, a domain, a feature, or the code that realizes it. Each layer holds the knowledge of an area at its own level.
 
-Adoption maturity is measured per layer, not per product. A product can have strong Value and a weak AI layer, or the reverse. This is what lets the model be applied to any product, including an existing product with poor knowledge: each layer works at its current level instead of the product having to be ready first.
+**Adoption maturity** is how far this model is in place in the development of a product. It answers: *how ready is what this work relies on?* It is assessed for each element of a layer on its own: the knowledge of each area, the implementation of each behavior, each role, and each outcome. There is no level for a layer or for a product as a whole. Its levels and how they are assessed are defined in [the Maturity chapter (Chapter 5)](05-maturity.md).
 
-The two combine. A mature part of the product in a layer with low adoption maturity is the riskiest combination: the work must preserve behavior that the layer does not yet fully understand.
+The layers are not parts of a product; they define how its development is done. In a real development, any element may exist or not, and at any level: code may come before the business case, and knowledge follows the work. An element that does not exist yet is at the lowest level. The work still goes ahead, and what is missing is stated, not assumed. This is what lets the model be applied to any product, including an existing product with poor knowledge.
+
+Work adapts to the lowest adoption maturity among the elements it relies on: the knowledge of the areas it touches, the implementation of the behavior that does it, and the roles that run and judge it. Strength in one element does not make up for weakness in another.
+
+The [principles](#17-principles) hold at every level, including the lowest. Adoption maturity measures how far the model is in place, never whether the principles are followed. Work that breaks a principle is not at a low level; it is outside this framework.
+
+The two combine. A mature area whose knowledge is at low adoption maturity is the riskiest combination: the work must preserve behavior that is not yet understood.
 
 Maturity adapts only the elements of a layer it actually affects. It does not apply to every element.
 
@@ -105,10 +111,10 @@ A principle is not checked directly. It shows in the policies and behaviors that
 **Knowledge lives outside the model.** Everything the AI needs and everything it produces exists outside the model, where its layer records it. Nothing depends on what a model or a session remembers, so models can be replaced.
 
 ### 1.7.5 Given context
-**Context is given, never inferred.** The AI works on the context it receives: the request, its boundary, and the lifecycle stage and adoption maturity of what it concerns. What is not given is asked for, not assumed.
+**Context is given, never inferred.** The AI works on the context it receives: the request, its boundary, the lifecycle stage of the areas it concerns, and the adoption maturity of what it relies on. What is not given is asked for, not assumed.
 
 ### 1.7.6 Shared, not personal
-**AI contributions are shared, not personal.** A contribution is the same whoever asks for it. Personal prompts, habits, preferences, and tool defaults are not a channel for work.
+**AI contributions are shared, not personal.** A contribution does not depend on who asks for it. It is made through instructions that are written down and open to everyone who does that work, never through personal prompts, habits, preferences, or tool defaults. How good and how consistent those instructions are grows with adoption maturity.
 
 ### 1.7.7 Adaptation
 **Adapt to lifecycle stage and adoption maturity.** How a layer works, and how much autonomy the AI is given, follow the stakes of the work and how ready the layer is to carry it. The principles themselves are never adapted.
@@ -125,7 +131,7 @@ Framework policies apply to every layer. A layer may make a framework policy str
 - A layer acts only within the boundary it was given. What it notices outside that boundary, it reports. ([1.7.5](#175-given-context))
 
 ### 1.8.2 Autonomy
-- Autonomy is lowest where the stakes are highest and understanding is lowest: mature parts with low adoption maturity. ([1.7.7](#177-adaptation))
+- Autonomy is lowest where the stakes are highest and understanding is lowest: mature areas whose knowledge is at low adoption maturity. ([1.7.7](#177-adaptation))
 - Work touching a sensitive area is never fully autonomous, at any stage or maturity. ([1.7.1](#171-accountability))
 - Autonomy can be tightened for a single request, but never loosened beyond the layer's interpretation. ([1.7.7](#177-adaptation))
 

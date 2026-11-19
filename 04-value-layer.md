@@ -413,7 +413,7 @@ The [AI Enablement Lead](roles/09-ai-enablement-lead.md) keeps the layer fit for
 - **Definition of the layer.** Behaviors, policies, and shared skills and conventions. Changes to them are deliberate and known to the people who rely on them.
 - **Independence.** What shapes an initiative and what measures it stay separate, in practice and not only on paper.
 - **Models.** Which model supports which behavior is decided from evaluations on the organization's own products.
-- **Alignment with the products.** The layer's adaptation reflects the real lifecycle stages and adoption maturity of each product.
+- **Alignment with the products.** The layer's adaptation reflects the real lifecycle stage of each area and the real adoption maturity of each element.
 - **Outcomes and change.** The layer changes based on its outcomes, not on opinion. Where its use is disputed, the AI Enablement Lead's interpretation applies.
 
 ## 4.8 Outcomes

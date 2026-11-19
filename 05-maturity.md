@@ -10,7 +10,7 @@ Lifecycle stage, the other kind of maturity, is defined in [the Layers chapter (
 
 - Adoption maturity is assessed per layer of a product. A product can be at different levels in different layers.
 - A layer's level is the lowest level reached across its dimensions. Strength in one dimension does not make up for weakness in another.
-- [Policies](01-layers.md#17-framework-policies) apply at every level. Maturity changes how much of the model is in place, never what is allowed.
+- [Principles](01-layers.md#17-principles) and [policies](01-layers.md#18-framework-policies) apply at every level. Maturity changes how much of the model is in place, never what is allowed.
 - Models and changes to skills are evaluated before use at every level. Maturity changes how rigorous the evaluation is: below level 4, a model or a changed skill is tried on representative requests from the organization's own products and the result is recorded; from level 4, the evaluation is systematic.
 
 ## 5.3 Dimensions
@@ -89,7 +89,7 @@ The line lies at level 3, the first level at which the layer works the same way 
 
 - A layer moves up one level at a time. What is missing for the next level is the layer's improvement plan.
 - Not every layer has to reach level 5. The level a layer aims for depends on the product and its lifecycle stage.
-- While a layer is at a low level, the behaviors of that layer work at low adoption maturity, and autonomy is stricter as the [framework](01-layers.md#173-autonomy) and [AI layer](02-ai-layer.md#243-autonomy) autonomy policies say.
+- While a layer is at a low level, the behaviors of that layer work at low adoption maturity, and autonomy is stricter as the [framework](01-layers.md#182-autonomy) and [AI layer](02-ai-layer.md#243-autonomy) autonomy policies say.
 
 ## 5.8 Relation to standards
 

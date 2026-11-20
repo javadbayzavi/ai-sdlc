@@ -1,28 +1,42 @@
 # Introduction
 
-## What this handbook defines
+## Why this handbook
 
-This handbook defines product development with AI at its center. It describes one development at three levels of abstraction and effort:
+AI can now do most of the work of changing a product: reading the code, making changes, testing them, and explaining what it finds. It does this fast and cheaply. But it is non-deterministic, it knows only the context it is given, and it cannot be accountable for what it does.
 
-- **[Value](04-value-layer.md):** why the product is worth building.
-- **[Delivery](03-delivery-layer.md):** why the product works the way it does.
-- **[AI](02-ai-layer.md):** what the product does, and how it is changed.
+That changes what product development has to get right. The question is no longer only how to write good code, but how to keep the work trustworthy when most of it is done by AI: who decides, who is accountable, how what is known about the product stays true, and how an organization grows into working this way without losing control of its product.
 
-At each level, the development needs its own set of behaviors once AI is at its center. The [Layers chapter](01-layers.md) sets out the three levels and how they relate.
+This handbook answers that question with a framework for product development that puts AI at its center.
 
-## What it is not
+## What it offers
 
-- **Not a process or a workflow.** The behaviors are not steps, and the layers are not stages. Each organization builds its own development from the framework, fitted to its product and to how far it has adopted the framework, as it would with frameworks such as ITIL, COBIT, or PRINCE2.
-- **Not automation.** People start the work, through their roles, and are accountable for it. The AI does not start work on its own or for another AI.
-- **Not tied to a technology.** It requires no particular tool, model, or platform.
+The framework describes product development at three levels:
 
-## Requests
+- **[Value](04-value-layer.md):** why the product is worth building, and whether what is delivered creates that value.
+- **[Delivery](03-delivery-layer.md):** why the product works the way it does, and how intent becomes product change in users' hands.
+- **[AI](02-ai-layer.md):** what the product does, and how it is understood and changed.
 
-A request is any inquiry or contribution to the development of the product, made through the roles and the AI. Many requests are questions, answered from the knowledge already held at their level: what a feature does, why it works that way, whether a claim holds. A request need not lead to any change, and no behavior has to take part in it.
+For each level, it sets out the behaviors that development needs once AI is at its center, the knowledge each level keeps, the policies it follows, and what each role contributes. Around the levels, it gives the principles that hold everywhere, a way to assess how far the framework is in place, guidance for implementing it, and the three roles that run it.
 
-## What holds and what adapts
+## Who it is for
 
-What is never tailored and what is adopted and adapted to the product are set out with the [principles (1.7)](01-layers.md#17-principles).
+- **Product Managers,** who decide what is worth building and are accountable for the value of the product.
+- **Agentic Engineers,** who turn intent into product change with the AI doing the work, and are accountable for that change reaching users.
+- **AI Enablement Leads,** who define and maintain how AI is used across the layers.
+- **Leaders** who decide how their organization adopts AI in product development.
+
+## How to use it
+
+Use the handbook as a reference, the way frameworks such as ITIL, COBIT, or PRINCE2 are used. It does not prescribe a sequence of steps. Each organization takes what fits its product and how far it has adopted the framework, and builds its own way of working from it.
+
+One part is never adapted: the [principles (1.7)](01-layers.md#17-principles). Everything else is adopted and adapted to the product.
+
+A practical way in:
+
+1. Read [Chapter 1](01-layers.md) for the model as a whole.
+2. Read the chapter of the layer you work in, and the chapter of your role.
+3. Use [Chapter 5](05-maturity.md) to assess where your product's development stands, and [Chapter 6](06-implementation-guidelines.md) to set up what is missing.
+4. Look up terms in the [glossary (Appendix B)](appendix-b-glossary.md).
 
 ## How the handbook is organized
 

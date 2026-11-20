@@ -176,9 +176,10 @@ Each layer is described by the same elements:
 ![The layered model](model.svg)
 
 - **Rings:** Value (outer), Delivery (middle), AI (core).
-- **[Value layer](04-value-layer.md#45-behavior):** the seven behaviors as slices around a band naming the components of the layer.
-- **[Delivery layer](03-delivery-layer.md#35-behavior):** the five behaviors as slices around a band naming the components of the layer.
-- **[AI layer](02-ai-layer.md#25-behavior):** the five behaviors as slices around a core naming the components of the layer.
+- **Frame:** the [principles](#17-principles), around all three layers. They hold in every layer and are never tailored.
+- **[Value layer](04-value-layer.md#45-behavior):** the seven behaviors as slices around a band naming the elements of the layer.
+- **[Delivery layer](03-delivery-layer.md#35-behavior):** the five behaviors as slices around a band naming the elements of the layer.
+- **[AI layer](02-ai-layer.md#25-behavior):** the five behaviors as slices around a core naming the elements of the layer.
 - Each Delivery behavior sits directly outside its AI counterpart: Explain and Explore, Evaluate and Assess, Deliver and Change, Validate and Verify, Confirm and Reconcile.
 - **[Product knowledge](#14-product-knowledge-a-cross-cutting-concern):** the cross-cutting slice through all layers, at a different level of abstraction in each: what the product does (AI), why it works this way (Delivery), and why it is worth building (Value).
 - **[Alignment with PDCA](appendix-a-alignment.md#a2-pdca):** the behaviors of every layer cover the Plan-Do-Check-Act cycle at that layer's level.

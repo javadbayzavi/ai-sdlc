@@ -10,6 +10,8 @@
 
 ## Contents
 
+[Introduction](00-introduction.md)
+
 1. [Layers](01-layers.md)
 2. [AI Layer](02-ai-layer.md)
 3. [Delivery Layer](03-delivery-layer.md)
@@ -23,6 +25,7 @@
 **Appendix**
 
 - A. [Alignment with Established Practices](appendix-a-alignment.md)
+- B. [Glossary](appendix-b-glossary.md)
 
 ---
 

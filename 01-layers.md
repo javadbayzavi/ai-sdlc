@@ -25,7 +25,7 @@ Each layer works through two kinds of things:
 - **Contracts** between neighboring layers: Value and Delivery, and Delivery and AI. A contract defines how two layers communicate in all cases: what is requested inward, what is returned outward, and what happens when the inner layer cannot deliver. Contracts change only deliberately, based on the layer's outcomes, and are known to everyone who relies on them before they change.
 - **Behavior** inside each layer: how the layer plays its part so the product gets built.
 
-Contracts are designed from the core outward. We first define what the AI needs to do reliable work and what it must return to be trusted. Delivery is shaped by that, and Value by what Delivery needs.
+Each contract is shaped by what its inner layer needs. The contract between Delivery and AI follows from what the AI needs to do reliable work and what it must return to be trusted. The contract between Value and Delivery follows from what Delivery needs.
 
 AI used as an instrument inside a layer belongs to that layer's behavior, not to the contracts.
 
@@ -67,6 +67,20 @@ Each kind of fact has exactly one source of truth across the whole framework. Wh
 | Why it is worth building | Value decisions | Value |
 
 The code is the truth for what the product is; the intent and its specs are the truth for what it should be. When they disagree, either the code departs from what it should be, which is a bug, or knowledge departs from what the product is, which is stale knowledge.
+
+### 1.4.3 An example
+
+One area of an online shop, order cancellation, as it is known at each level:
+
+| Layer | What is known |
+|---|---|
+| Value | Customers can cancel an order themselves. It keeps their trust and saves support work. |
+| Delivery | Cancellation is allowed until the order reaches the warehouse. After that, it becomes a return, because goods already picked must be handled again. |
+| AI | The cancel action is refused once the order's status is "picked". The refund is issued through the payment service. |
+
+Questions about the area can be asked at any level, and each is answered from the knowledge held there: whether cancellation saves support work, from Value; why a packed order cannot be cancelled, from Delivery; what happens to the refund, from the code through the AI layer. A question such as "can a customer cancel by phone?" is answered from what is known, without anything being built.
+
+If Value tells customers they can cancel within a day, while Delivery and the code allow it only until the order reaches the warehouse, the levels disagree. That is a false commitment, one of the gaps described in [1.4.1](#141-consistency).
 
 ## 1.5 Two kinds of maturity
 

@@ -74,7 +74,7 @@ The [principles (1.7)](01-layers.md#17-principles) and [framework policies (1.8)
 - **Low adoption maturity:** each level moves one step stricter. ([1.7.7](01-layers.md#177-adaptation))
 
 ### 2.4.4 Models
-- A model is used for a contract only after it has been evaluated for that contract on the organization's own products. How rigorous the evaluation is grows with [adoption maturity](05-maturity.md#52-unit-of-assessment). ([1.7.6](01-layers.md#176-shared-not-personal))
+- A model is used for a contract only after it has been evaluated for that contract on the organization's own products. How rigorous the evaluation is grows with [adoption maturity](05-maturity.md#52-unit-of-assessment). ([1.7.4](01-layers.md#174-knowledge-outside-the-model))
 
 ### 2.4.5 Delegation
 - Work in this layer is requested through the contracts. AI is never used through a person's own prompts or tools to produce work outside them. ([1.7.6](01-layers.md#176-shared-not-personal))

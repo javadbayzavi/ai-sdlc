@@ -2,7 +2,7 @@
 
 ## 8.1 Purpose
 
-The Agentic Engineer turns intent into product change delivered to users, with the AI as the actor. The product is changed by the AI; the Agentic Engineer frames the work, decides on what the AI returns, and is accountable for the change reaching users and running healthy.
+The Agentic Engineer turns intent into product change delivered to users, with the AI as the actor. The product is changed by the AI, and by a person only where the AI cannot ([2.4.5](../02-ai-layer.md#245-delegation)); the Agentic Engineer frames the work, decides on what the AI returns, and is accountable for the change reaching users and running healthy.
 
 ## 8.2 Where the role works
 
@@ -42,6 +42,7 @@ Where a Delivery behavior needs code-level truth, the Agentic Engineer makes the
 - Whether each result from the AI layer is accepted or sent back.
 - The lifecycle stage and adoption maturity stated in each AI-layer request, including when the layer argues against them.
 - The answers to the AI layer's stops.
+- Whether a change the AI cannot make is made by a person, under the [AI layer's delegation policy](../02-ai-layer.md#245-delegation).
 - Specs, acceptance criteria, and how the work is broken into pieces. The Product Manager confirms that the acceptance criteria capture the intent.
 - When a release goes to users, and when a failed release is restored.
 - Reviews at the points the [AI layer's autonomy policy](../02-ai-layer.md#243-autonomy) sets.

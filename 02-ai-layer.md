@@ -77,7 +77,8 @@ The [principles (1.7)](01-layers.md#17-principles) and [framework policies (1.8)
 - A model is used for a contract only after it has been evaluated for that contract on the organization's own products. How rigorous the evaluation is grows with [adoption maturity](05-maturity.md#52-unit-of-assessment). ([1.7.6](01-layers.md#176-shared-not-personal))
 
 ### 2.4.5 Delegation
-- Work in this layer is requested through the contracts and done by the AI, not produced by a person writing code with AI help. ([1.7.6](01-layers.md#176-shared-not-personal))
+- Work in this layer is requested through the contracts. AI is never used through a person's own prompts or tools to produce work outside them. ([1.7.6](01-layers.md#176-shared-not-personal))
+- Where the AI cannot make a change, whoever runs the layer may have a person make it ([1.6](01-layers.md#16-running-the-layers)). A change made by a person fulfills the same contract: it answers a job description, is verified independently, updates the code-level knowledge, and leaves a trace that names who made it. ([1.7.2](01-layers.md#172-independence), [1.7.4](01-layers.md#174-knowledge-outside-the-model))
 
 ### 2.4.6 Independence
 - The AI that changes and the AI that verifies are different actors with separate contexts. ([1.7.2](01-layers.md#172-independence))

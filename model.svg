@@ -1,5 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1040" font-family="Helvetica, Arial, sans-serif">
-  <rect width="1000" height="1040" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1120 1150" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1120" height="1150" fill="#ffffff"/>
+
+  <!-- Principles: the frame every layer stands in -->
+  <circle cx="560" cy="560" r="530" fill="#ECE9E2" stroke="#8C8577" stroke-width="1.5"/>
+  <defs>
+    <path id="principlesTop" d="M 65 560 A 495 495 0 0 1 1055 560"/>
+    <path id="principlesBottom" d="M 50 560 A 510 510 0 0 0 1070 560"/>
+  </defs>
+  <text font-size="13" fill="#4A443A">
+    <textPath xlink:href="#principlesTop" href="#principlesTop" startOffset="50%" text-anchor="middle"><tspan font-weight="bold">PRINCIPLES</tspan>  ·  Accountability · Independence · Honesty · Knowledge outside the model · Given context · Shared, not personal · Adaptation</textPath>
+  </text>
+  <text font-size="12" fill="#4A443A">
+    <textPath xlink:href="#principlesBottom" href="#principlesBottom" startOffset="50%" text-anchor="middle">Never tailored  ·  hold in every layer, at every level of adoption</textPath>
+  </text>
+
+  <g transform="translate(60,60)">
 
   <!-- Value: behaviors -->
   <g stroke="#8FA8CC" stroke-width="1" fill="#E1E9F4">
@@ -50,7 +65,7 @@
     <path id="valueBand" d="M 154 500 A 346 346 0 0 1 846 500"/>
   </defs>
   <text font-size="11" fill="#1F3352">
-    <textPath xlink:href="#valueBand" href="#valueBand" startOffset="50%" text-anchor="middle"><tspan font-weight="bold">VALUE</tspan>  ·  Policies · Knowledge sources · AI contributions · Role contributions · Outcomes</textPath>
+    <textPath xlink:href="#valueBand" href="#valueBand" startOffset="50%" text-anchor="middle"><tspan font-weight="bold">VALUE</tspan>  ·  Knowledge sources · Policies · AI contributions · Role contributions · Outcomes</textPath>
   </text>
   <g text-anchor="middle" fill="#1F3352">
     <text x="500" y="86" font-size="14" font-weight="bold">Discover</text>
@@ -67,7 +82,7 @@
     <path id="deliveryBand" d="M 284 500 A 216 216 0 0 1 716 500"/>
   </defs>
   <text font-size="11" fill="#1F3352">
-    <textPath xlink:href="#deliveryBand" href="#deliveryBand" startOffset="50%" text-anchor="middle"><tspan font-weight="bold">DELIVERY</tspan>  ·  Policies · Knowledge sources · AI contributions · Role contributions · Outcomes</textPath>
+    <textPath xlink:href="#deliveryBand" href="#deliveryBand" startOffset="50%" text-anchor="middle"><tspan font-weight="bold">DELIVERY</tspan>  ·  Knowledge sources · Policies · AI contributions · Role contributions · Outcomes</textPath>
   </text>
 
   <!-- Delivery behaviors -->
@@ -91,8 +106,8 @@
   <!-- AI core components -->
   <g text-anchor="middle" fill="#ffffff">
     <text x="500" y="456" font-size="15" font-weight="bold">AI</text>
-    <text x="500" y="477" font-size="11">Policies</text>
-    <text x="500" y="494" font-size="11">Knowledge sources</text>
+    <text x="500" y="477" font-size="11">Knowledge sources</text>
+    <text x="500" y="494" font-size="11">Policies</text>
     <text x="500" y="511" font-size="11">AI contributions</text>
     <text x="500" y="528" font-size="11">Role contributions</text>
     <text x="500" y="545" font-size="11">Outcomes</text>
@@ -102,5 +117,6 @@
   <text x="500" y="652" text-anchor="middle" font-size="10" fill="#ffffff">What it does</text>
   <text x="500" y="784" text-anchor="middle" font-size="10" fill="#3A2A05">Why it works this way</text>
   <text x="500" y="902" text-anchor="middle" font-size="10" fill="#3A2A05">Why it is worth building</text>
-  <text x="500" y="1015" text-anchor="middle" font-size="14" font-weight="bold" fill="#B7832A">PRODUCT KNOWLEDGE (cross-cutting)</text>
+  </g>
+  <text x="560" y="1122" text-anchor="middle" font-size="14" font-weight="bold" fill="#B7832A">PRODUCT KNOWLEDGE (cross-cutting)</text>
 </svg>

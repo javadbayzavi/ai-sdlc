@@ -168,7 +168,7 @@ Each term is explained in a few words, with a link to where the handbook defines
 
 **Source of truth.** The one source that each kind of fact is checked against. When another source disagrees, the other source is corrected. See [1.4.2](01-layers.md#142-sources-of-truth).
 
-**Specs.** The technical half of feature knowledge. They live in the code, versioned with what they describe, and point to the business record they serve. See [3.3.2](03-delivery-layer.md#332-where-knowledge-lives).
+**Specs.** The technical half of feature knowledge. They live in the repository, next to the code they describe, versioned with it, and point to the business record they serve. See [3.3.2](03-delivery-layer.md#332-where-knowledge-lives).
 
 **Standing intent.** A committed intent with an explicit scope and capacity, such as capacity committed to debt reduction. See [4.5.4](04-value-layer.md#454-commit).
 

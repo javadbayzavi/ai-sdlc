@@ -31,6 +31,8 @@ Use the handbook as a reference, the way frameworks such as ITIL, COBIT, or PRIN
 
 One part is never adapted: the [principles (1.7)](01-layers.md#17-principles). Everything else is adopted and adapted to the product.
 
+The framework is itself a method, and how an organization adopts and tailors it improves over time. That improvement is governed by the organization's own frameworks for improvement and governance, not by the framework; see [Chapter 9](roles/09-ai-enablement-lead.md#91-purpose).
+
 A practical way in:
 
 1. Read [Chapter 1](01-layers.md) for the model as a whole.

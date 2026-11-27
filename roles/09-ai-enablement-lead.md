@@ -4,6 +4,8 @@
 
 The AI Enablement Lead keeps the framework fit for the products: the definition of every layer and its implementation. They own the framework and do not use it for product work. The AI Enablement Lead is measured by the outcomes of the layers, not by what they build directly.
 
+Their work is on the method, not on the product. The behaviors of the layers develop and improve the product; the AI Enablement Lead improves how the framework is adopted and tailored for the products. The judgments and evaluations described in the layers concern the product. How the method itself is judged and improved is governed by the organization's own frameworks for improvement and governance, such as continual service improvement in ITIL, an information security management system, EFQM, or COBIT. The framework does not prescribe which. Better tailoring improves the product's lifecycle indirectly, never directly.
+
 ## 9.2 Where the role works
 
 | Layer | Part |
@@ -53,8 +55,8 @@ None. The AI Enablement Lead defines and maintains the behaviors; the Product Ma
 
 ## 9.6 Independence
 
-No one judges their own work, including the AI Enablement Lead:
-- Every change to a skill, model, or permission is evaluated before use.
+The AI Enablement Lead's own work, the tailoring of the framework, is judged and improved under the organization's frameworks for improvement and governance ([9.1](#91-purpose)), not by the behaviors of the layers. Those frameworks provide its [independence](../01-layers.md#172-independence). Within this framework, two things always hold:
+- Every change to a skill, model, or permission is evaluated on the organization's own products before use.
 - Every change is known to the people who rely on it before it applies.
 
 ## 9.7 Competencies

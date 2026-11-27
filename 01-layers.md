@@ -65,6 +65,7 @@ Each kind of fact has exactly one source of truth across the whole framework. Wh
 | What was delivered to whom | Delivery records | Delivery |
 | How it is used | Usage data | Delivery |
 | Why it is worth building | Value decisions | Value |
+| The lifecycle stage of each feature | Value decisions | Value |
 
 The code is the truth for what the product is; the intent and its specs are the truth for what it should be. When they disagree, either the code departs from what it should be, which is a bug, or knowledge departs from what the product is, which is stale knowledge.
 

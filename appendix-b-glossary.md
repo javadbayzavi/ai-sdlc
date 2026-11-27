@@ -180,7 +180,7 @@ Each term is explained in a few words, with a link to where the handbook defines
 
 **Tailoring.** Adopting and adapting the framework to a product. Everything except the principles is tailored. Improving how the framework is tailored is the work of the AI Enablement Lead, governed by the organization's own frameworks for improvement and governance. See [1.7](01-layers.md#17-principles) and [9.1](roles/09-ai-enablement-lead.md#91-purpose).
 
-**Trace.** What every AI contribution leaves with its output: what it served, the adaptation parameters, the skill version, the model, and who confirmed the result. See [1.8.3](01-layers.md#183-trace).
+**Trace.** What every AI contribution leaves with its output: what it served, the adaptation parameters, the version of the skill or of the written instructions it followed, the model, and who confirmed the result. See [1.8.3](01-layers.md#183-trace).
 
 **Validate.** The Delivery behavior that judges whether what was delivered serves the intent in the hands of users. See [3.5.4](03-delivery-layer.md#354-validate).
 

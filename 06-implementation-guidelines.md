@@ -114,7 +114,7 @@ Value skills never call Delivery or the AI layer. What Delivery returns through 
 | [Prioritize](04-value-layer.md#453-prioritize) | Read Value knowledge. Write draft roadmap and debt decisions. | Initiatives, strategy, peer plans, evaluations, and reported debt | Product Manager | — |
 | [Commit](04-value-layer.md#454-commit) | Read Value knowledge. Write draft intents and commitments. No sending outward. | Prioritized initiatives, evaluations, and confirmations | Product Manager, then Delivery | — |
 | [Realize](04-value-layer.md#455-realize) | Read Value knowledge and outward material. Write drafts of launch, enablement, and claims. No publishing. | Delivered change, outward claims, and sales and support signals | Product Manager | — |
-| [Measure](04-value-layer.md#456-measure) | Read business data, usage, and customer evidence. Write drafts only. | The initiative's original expectations, validations, business data, and customer evidence | Product Manager | Shape |
+| [Measure](04-value-layer.md#456-measure) | Read business data and customer evidence. Write drafts only. | The initiative's original expectations, validations, business data, and customer evidence | Product Manager | Shape |
 | [Steer](04-value-layer.md#457-steer) | Read Value knowledge. Write draft decisions and roadmap revisions. | Measure verdicts, reports of feature state and risk, strategy, and peer plans | Product Manager | — |
 
 **Adaptation of the setup.** None. The AI never decides in this layer, and nothing goes outward on its own initiative. The skill applies the behavior's own adaptation.

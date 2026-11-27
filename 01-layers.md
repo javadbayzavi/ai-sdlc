@@ -151,7 +151,7 @@ Framework policies apply to every layer. A layer may make a framework policy str
 - Autonomy can be tightened for a single request, but never loosened beyond the layer's interpretation. ([1.7.7](#177-adaptation))
 
 ### 1.8.3 Trace
-- Every AI contribution leaves a trace with its output: what it served, the adaptation parameters, the skill version, the model used, and, where a person confirms the result, who confirmed it. ([1.7.1](#171-accountability), [1.7.4](#174-knowledge-outside-the-model))
+- Every AI contribution leaves a trace with its output: what it served, the adaptation parameters, the skill version, the model used, and, where a person confirms the result, who confirmed it. Before a behavior has a skill, the trace records the version of the written instructions it followed. ([1.7.1](#171-accountability), [1.7.4](#174-knowledge-outside-the-model))
 
 ### 1.8.4 Data protection
 - No personal data, secrets, or credentials enter the context of any AI, in any layer. (External: information security and privacy, see [Appendix A.4](appendix-a-alignment.md#a4-principles-and-policies))

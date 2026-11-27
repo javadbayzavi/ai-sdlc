@@ -43,7 +43,7 @@ Each business request concerns one or more features, each with its lifecycle sta
 - **Code-level truth, through the AI layer:** claims checked with [Reconcile](02-ai-layer.md#225-reconcile), gaps filled with [Explore](02-ai-layer.md#221-explore), technical reach from [Assess](02-ai-layer.md#224-assess). The code is never read directly.
 
 ### 3.3.2 Where knowledge lives
-- **Specs** live in the code: versioned with what they describe, and checkable against it.
+- **Specs** live in the repository, next to the code they describe: versioned with it, and checkable against it.
 - **Business knowledge** lives outside the code, in the ticketing and documentation systems.
 - The two point to each other: each spec references the business record it serves, and each business record references the specs that realize it.
 

@@ -122,6 +122,8 @@ Each term is explained in a few words, with a link to where the handbook defines
 
 **Peer plans.** The plans of other products and shared platforms: what they need from the product, and what it depends on. See [4.3.1](04-value-layer.md#431-sources).
 
+**Pinning.** Capturing the existing behavior of a mature or retiring area in tests, through a separate Change that changes no behavior, before the area is changed at low adoption maturity. The pinning is verified and accepted before the change starts. See [2.4.3](02-ai-layer.md#243-autonomy).
+
 **Policy.** A rule that turns a principle into what must or must not be done. See [1.8](01-layers.md#18-framework-policies).
 
 **Posture.** How AI is used in a layer: as a delegated actor or as an instrument. See [2.6](02-ai-layer.md#26-ai-contributions), [3.6](03-delivery-layer.md#36-ai-contributions), and [4.6](04-value-layer.md#46-ai-contributions).

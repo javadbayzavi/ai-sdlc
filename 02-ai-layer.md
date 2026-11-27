@@ -72,6 +72,7 @@ The [principles (1.7)](01-layers.md#17-principles) and [framework policies (1.8)
 - **In development:** moderate autonomy. ([1.7.7](01-layers.md#177-adaptation))
 - **Mature or retiring:** close human review. ([1.7.7](01-layers.md#177-adaptation))
 - **Low adoption maturity:** each level moves one step stricter. ([1.7.7](01-layers.md#177-adaptation))
+- **Mature or retiring, at low adoption maturity:** existing behavior is pinned before the change. A separate Change captures it in tests without changing any behavior, and it is verified and accepted before the change itself starts. Where existing behavior cannot be pinned well enough, the change does not start, and the risk goes back to Delivery. ([1.7.7](01-layers.md#177-adaptation), [1.7.2](01-layers.md#172-independence))
 
 ### 2.4.4 Models
 - A model is used for a contract only after it has been evaluated for that contract on the organization's own products. How rigorous the evaluation is grows with [adoption maturity](05-maturity.md#52-unit-of-assessment). ([1.7.4](01-layers.md#174-knowledge-outside-the-model))
@@ -136,6 +137,7 @@ The [principles (1.7)](01-layers.md#17-principles) and [framework policies (1.8)
 - Fixing defects.
 - Maintenance, such as dependency updates and small fixes.
 - Removing retiring features.
+- Pinning existing behavior in tests before it is changed or removed, without changing any behavior.
 - Recording or correcting knowledge, including findings from Explore and Reconcile carried in the job description.
 
 **Expected behavior:**
@@ -149,7 +151,7 @@ The [principles (1.7)](01-layers.md#17-principles) and [framework policies (1.8)
 
 | Adoption maturity | Starting point | Main risk |
 |---|---|---|
-| Low | Existing behavior is captured in tests before it is modified; smaller increments | Changing what is not yet understood |
+| Low | Existing behavior is captured in tests before it is modified, in a separate Change for mature and retiring areas; smaller increments | Changing what is not yet understood |
 | High | Recorded knowledge, checked against the code | Trusting knowledge that has drifted |
 
 **Adaptation by lifecycle stage:**
@@ -161,7 +163,7 @@ The [principles (1.7)](01-layers.md#17-principles) and [framework policies (1.8)
 | Mature | Only what was intended changes; everything else is preserved | Acceptance criteria met, no regression in preserved behavior |
 | Retiring | Removal without breaking dependents, nothing left behind | Dependents handled, no leftover code, configuration, or data |
 
-**Highest demand:** a mature area with low adoption maturity. Existing behavior is pinned down before the change, increments are smallest, and every uncertainty leads to a stop.
+**Highest demand:** a mature area with low adoption maturity. Existing behavior is pinned down in a separate Change, verified and accepted before this one starts; increments are smallest, and every uncertainty leads to a stop.
 
 **Outputs:**
 - The change and its tests.
@@ -183,6 +185,7 @@ The [principles (1.7)](01-layers.md#17-principles) and [framework policies (1.8)
 **Used for:**
 - Checking a change before it is accepted.
 - Rechecking a change after a fix.
+- Checking that a pinning change captures existing behavior and changes none of it.
 
 **Expected behavior:**
 - The change is judged against its job description, not against the explanation of whoever made it.

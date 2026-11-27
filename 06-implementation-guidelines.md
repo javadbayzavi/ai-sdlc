@@ -81,8 +81,9 @@ The AI is the actor. Every behavior is started by the Agentic Engineer. Skills a
 | New idea | The result |
 | In development | The approach before the change, and the result |
 | Mature or retiring | The approach, each increment, and the result |
+| Mature or retiring, at low adoption maturity | Existing behavior pinned in a separate Change, verified and accepted first; then the approach, each increment, and the result |
 
-[Low adoption maturity](05-maturity.md#55-low-and-high) moves each stage one step stricter.
+[Low adoption maturity](05-maturity.md#55-low-and-high) moves each stage one step stricter. For mature and retiring areas, the stricter step is the last row: pinning before the change.
 
 ## 6.5 Delivery layer
 
